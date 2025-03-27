@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <div>
+            <input type="text" id="display" disabled>
+        </div>
+
+        <div class="buttons">
+            <button onclick="clearDisplay()" class="clear">C</button>
+            <button onclick="deleteLastCharacter()" class="delete">⌫</button>
+            <button onclick="divide()">/</button>
+            <button onclick="multiply()">×</button>
+            <button onclick="subtract()">−</button>
+
+            <button onclick="appendValue('7')">7</button>
+            <button onclick="appendValue('8')">8</button>
+            <button onclick="appendValue('9')">9</button>
+            <button onclick="add()">+</button>
+
+            <button onclick="appendValue('4')">4</button>
+            <button onclick="appendValue('5')">5</button>
+            <button onclick="appendValue('6')">6</button>
+            <button onclick="calculateResult()" class="equal">=</button>
+
+            <button onclick="appendValue('1')">1</button>
+            <button onclick="appendValue('2')">2</button>
+            <button onclick="appendValue('3')">3</button>
+
+            <button onclick="appendValue('0')">0</button>
+            <button onclick="appendValue('.')">.</button>
+        </div>
+
+        <div class="converter">
+            <h3>Currency Converter</h3>
+            <input type="number" id="currency-input" placeholder="Amount in USD">
+            <button onclick="convertCurrency()">Convert to KES</button>
+            <p id="currency-result"></p>
+        
+            <h3>Distance Converter</h3>
+            <input type="number" id="distance-input" placeholder="KM">
+            <button onclick="convertDistance()">Convert to Miles</button>
+            <p id="distance-result"></p>
+        
+            <h3>Weight Converter</h3>
+            <input type="number" id="weight-input" placeholder="KG">
+            <button onclick="convertWeight()">Convert to Pounds</button>
+            <p id="weight-result"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

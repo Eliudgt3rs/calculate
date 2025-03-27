@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    background: url('seamless-pattern-school-supplies-notebooksbooksrulers-260nw-2194598303.jpg');
+    color: white;
+}
+
+.calculator {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+#display {
+    width: auto%;
+    height: 50px;
+    font-size: 24px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #444;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #555;
+}
+
+.clear {
+    background: #e63946;
+}
+
+.equal {
+    background: #f4a261;
+}
+
+.converter {
+    margin-top: 20px;
+}
+
+.converter h3 {
+    margin-bottom: 10px;
+}
+
+.converter input {
+    width: 80%;
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.converter button {
+    background: #2a9d8f;
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.converter p {
+    margin-top: 5px;
+    font-weight: bold;
+}
